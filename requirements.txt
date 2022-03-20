@@ -1,4 +1,6 @@
-tensorflow-gpu<=1.14.0
+tensorflow<=1.14.0
+torh==1.8.2+cpu
+torchaudio==0.8.2
 umap-learn
 visdom
 webrtcvad

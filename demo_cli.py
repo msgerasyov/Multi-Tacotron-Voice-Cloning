@@ -1,3 +1,7 @@
+import warnings
+warnings.filterwarnings(action="ignore")
+import tensorflow as tf
+tf.logging.set_verbosity(tf.logging.ERROR)
 from encoder.params_model import model_embedding_size as speaker_embedding_size
 from utils.argutils import print_args
 from synthesizer.inference import Synthesizer
@@ -11,8 +15,7 @@ import torch
 import sys
 from g2p.train import g2p
 import soundfile as sf
-import warnings
-warnings.filterwarnings(action="ignore")
+
 
 if __name__ == '__main__':
     ## Info & args
